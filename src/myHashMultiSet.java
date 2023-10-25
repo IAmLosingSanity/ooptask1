@@ -15,16 +15,6 @@ public class myHashMultiSet<E> implements Iterable<E> {
         return new MultiSetIterator();
     }
 
-    public boolean removeAll(Collection<?> c) {
-        boolean modified = false;
-        for (Object element : c) {
-            if (remove(element)) {
-                modified = true;
-            }
-        }
-        return modified;
-    }
-
     public boolean remove(Object o) {
         Integer count = map.get(o);
         if (count != null) {

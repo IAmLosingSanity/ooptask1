@@ -24,7 +24,10 @@ public class Main {
         names.clear();
         System.out.println(names.isEmpty());  // true
 
+        System.out.println("==============================");
+
         myHashMultiSet<String> set = new myHashMultiSet<>();
+        myHashMultiSet<String> set2 = new myHashMultiSet<>();
 
         // Добавление элементов в мультимножество
         set.add("apple");
@@ -32,6 +35,9 @@ public class Main {
         set.add("apple");
         set.add("orange");
         set.add("banana");
+
+        set2.add("orange");
+        set2.add("banana");
 
         // Печать элементов мультимножества
         for (String element : set) {
